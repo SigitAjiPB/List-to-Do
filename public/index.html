@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="overflow-hidden flex justify-center py-9">
+<main class="container h-[550px] flex flex-col max-h-max  w-[70%] rounded-2xl overflow-hidden bg-green-400 justify-between drop-shadow-lg" >
+        <section class="w-full bg-green-600 flex justify-center">
+            <ul class="w-full p-4 flex relative justify-between items-center">
+                <li class="header pl-2 font-bold text-white flex justify-center">
+                    <p class="text-2xl">List to Do</p>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fffafa" viewBox="0 0 256 256"><path d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z"></path></svg>
+                </li>
+            </ul>
+        </section>
+
+        <section id="todoContainer" class="h-full p-6 overflow-y-scroll">
+            <!-- <div class="wrapperMain">
+                <div id="listWrapper" class="mb-2 flex w-full gap-2 justify-between items-center">
+                    <div class="p-3 w-full bg-white rounded-lg hover:bg-slate-200 shadow-lg"><p class="min-w-min">Catch Giratina</p></div>
+                    <button class="h-12 w-12 deleteBtn rounded-lg bg-red-500 shadow-lg flex justify-center items-center hover:bg-red-600"><svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fffafa" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM112,168a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm0-120H96V40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8Z"></path></svg></button>
+                </div>
+            </div> -->
+        </section>
+
+        <form id="formInput" method="post" class="w-full p-8 flex justify-between drop-shadow-lg">
+                <input id="inputTodo" class="p-3 w-full bg-white shadow-lg rounded-lg outline-none border-none bg-transparent " placeholder="+ Tambah List to Do" type="text" name="list" id="newList">
+                <button id="addTodo" class= "w-10 ml-3 flex items-center justify-center bg-green-400 rounded text-white font-bold text-2xl shadow-lg hover:bg-green-500">+</button>
+        </form>  
+    </main>
+
+<script src="./script.js"></script>
+</body>
+</html>
